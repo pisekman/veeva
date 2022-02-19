@@ -6,12 +6,16 @@ import TopNav from './components/TopNav';
 import img1 from './components/assets/img1.png';
 import sliderPhoto from './components/assets/slider.png';
 import Slider from './components/Slider';
+import Header from './components/Header'
+import Cards from './components/Cards'
 
 function App() {
 	return (
 		<Layout>
 			<TopNav />
 			<Slider />
+			<Header/>
+			<Cards/>
 		</Layout>
 	);
 }

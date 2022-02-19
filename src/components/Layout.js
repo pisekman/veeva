@@ -2,9 +2,7 @@ import React from 'react';
 import { Box, Flex } from 'rebass/styled-components';
 import { ThemeProvider } from 'styled-components';
 import './../index.css';
-import TopNav from './TopNav';
-import Footer from './Footer';
-import Header from './Header';
+
 
 const breakpoints = ['70em', '90em', '110em'];
 
@@ -43,16 +41,8 @@ export const theme = {
 			boxShadow:
 				'rgb(0 0 0 / 12%) 0px 1px 6px, rgb(0 0 0 / 12%) 0px 1px 4px',
 		},
-		singlePageContent: {
-			marginLeft: [50, 150, 250],
-			backgroundColor: 'white',
-			color: 'text',
-			alignSelf: 'flex-end',
-			justifyContent: 'flex-end',
-			alignItems: 'flex-start',
-			marginTop: '-60px',
-			flexDirection: 'column',
-		},
+
+	
 	},
 };
 

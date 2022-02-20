@@ -1,5 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
+import position from 'styled-components'
 import img1 from './assets/img1.png';
+import cert from './assets/cert.png';
 import {
 	Box,
 	Flex,
@@ -8,9 +11,41 @@ import {
 	Heading,
 } from 'rebass/styled-components';
 
+const LogoContainer = styled.div`
+	position: relative;
+`;
+
+const Logo = styled.img`
+	position: absolute;
+	top: 10%;
+	left: 5%;
+
+	@media (max-width: 568px) {
+		top: 3%;
+		left: 10%;
+		width: 80px;
+
+	}
+
+	@media (min-width: 568px) {
+		top: 3%;
+		left: 10%;
+		width: 150px;
+
+	}
+	@media (min-width: 1024px) {
+		top: 5%;
+		left: 5%;
+		width: 264px;
+
+	}
+`;
+
 const Benefits = () => {
 	return (
 		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'}>
+							<LogoContainer>
+
 			<Box
 				display={['block', 'flex', 'flex']}
 				alignItems={['center', 'center', 'center']}
@@ -21,16 +56,20 @@ const Benefits = () => {
 					outline: '10px solid white',
 					outlineOffset: '-40px',
 				}}
+	
 			>
-				<Image
-					objectFit='cover'
-					flexGrow={2}
-					src={img1}
-					minWidth={'60vw'}
-					sx={{
-						width: ['100%', '100%', '100%'],
-					}}
-				/>
+					<Image
+						objectFit='cover'
+						flexGrow={2}
+						src={img1}
+						minWidth={'60vw'}
+						sx={{
+							width: ['100%', '100%', '100%'],
+						}}
+					/>
+					<Logo src={cert} />
+				
+
 				<Box
 					sx={{
 						maxWidth: '70%',
@@ -76,6 +115,7 @@ const Benefits = () => {
 					</Text>
 				</Box>
 			</Box>
+			</LogoContainer>
 		</Flex>
 	);
 };

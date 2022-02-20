@@ -19,6 +19,9 @@ export const theme = {
 		silent: '#959595',
 		success: '#007f0a',
 	},
+	fonts: {
+		body: 'Lato',
+	},
 	buttons: {
 		primary: {
 			minHeight: 50,

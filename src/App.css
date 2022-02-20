@@ -1,14 +1,13 @@
 .App {
-  text-align: center;
+	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-  font-family: 'Lato', sans-serif;
-
+	font-family: 'Lato', sans-serif;
 }
 
 .innerBorder {
 	outline: 5px solid white;
 	outline-offset: -45px;
-	}
+}

@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-
 import Layout from './components/Layout';
+import TopHeader from './components/TopHeader'
 import {
 	Box,
 	Flex,
@@ -10,6 +10,7 @@ import {
 	Heading,
 } from 'rebass/styled-components';
 import TopNav from './components/TopNav';
+import Benefits from './components/Benefits'
 import img1 from './components/assets/img1.png';
 import sliderPhoto from './components/assets/slider.png';
 import Slider from './components/Slider';
@@ -22,8 +23,10 @@ function App() {
 		<Layout>
 			<TopNav />
 			<Slider />
-			<Header />
-			<Features />
+			<TopHeader/>
+			{/* <Header /> */}
+			{/* <Features /> */}
+			<Benefits/>
 			<Cards />
 		</Layout>
 	);

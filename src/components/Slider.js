@@ -9,15 +9,13 @@ const Slider = () => {
         <Box
         p={5}
         fontSize={4}
-        width={[1, 1, 1]}
         color='white'
         bg={['primary', 'red', 'secondary']}
     >
         Box from 1st box
     </Box>
     <Box
-        width={[1, 1, 1]}
-        maxHeight={['426px', 'auto', 'auto']}
+        maxHeight={['356px', 'auto', 'auto']}
         sx={{
             backgroundImage: 'url(../../slider.png)',
             backgroundSize: 'cover',
@@ -28,8 +26,7 @@ const Slider = () => {
     >
         <Image
             src={vevalogo}
-            width={['60%', '40%', '40%']}
-            sx={{}}
+            width={['50%', '20%', '20%']}
             height={'auto'}
         />
     </Box>

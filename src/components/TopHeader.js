@@ -14,11 +14,13 @@ const TopHeader = () => {
 			opacity={0.9}
 			textAlign={'center'}
 			flexDirection={'column'}
-			flex={1}
+			// flex={1}
 		>
 			<Heading
-				width={[1, 1, 1]}
 				alignItems='center'
+				py={4}
+				fontFamily={'Lato'}
+				letterSpacing={'1rem'}
 				css={{
 					'&::after': {
 						content: "''",
@@ -30,31 +32,28 @@ const TopHeader = () => {
 					},
 				}}
 			>
-				Veeva Full- Service Content Partner
+				VEEVA FULL - SERVICE CONTENT PARTNER{' '}
 			</Heading>
 			<Box
 				display={['block', 'block', 'flex']}
 				width={'100%'}
 				minWidth={'364px'}
-				paddingY={'3rem'}
-				position={'relative'}
-				zIndex={'1'}
+				paddingY={['1rem', '2rem', '2rem']}
 			>
 				<Box
-					width={['100%', '1', '1/3']}
+					width={['100%', '100%', '1/3']}
 					height={'auto'}
 					display='flex'
 					alignItems='center'
 					my={'10px'}
 				>
 					<Text
-						textAlign={['justify', 'center', 'right']}
-						fontSpace='100px'
-						fontSize={[40, 40, '1.8rem']}
-						maxWidth={'100%'}
-						paddingTop={'10px'}
+						textAlign={['justify', 'justify', 'right']}
+						fontSize={['1.1rem', '1.5rem', '1.7rem']}
+						maxWidth={'90%'}
+						paddingBottom={'1rem'}
 						fontFamily={'Lato'}
-
+						lineHeight={'2rem'}
 					>
 						Veeva jest światowym liderem w dostarczaniu oprogramowania
 						opartego na chmurze dla globalnej branży life sciences.
@@ -71,9 +70,9 @@ const TopHeader = () => {
 					</Text>
 				</Box>
 				<Box
-					width={['100%', '1', '50%']}
+					width={['100%', 'auto', 'auto']}
 					height={'auto'}
-					mx={'10px'}
+					// mx={'10px'}
 					display={'flex'}
 					justifyContent='center'
 					minWidth={'400px'}
@@ -81,10 +80,11 @@ const TopHeader = () => {
 					<Image
 						// objectFit='cover'
 						src={people}
+						maxHeight={'800px'}
 						sx={{
 							outline: '10px solid white',
 							outlineOffset: '-40px',
-							width: 'auto',
+							// width: 'auto',
 						}}
 					/>
 				</Box>
@@ -96,13 +96,13 @@ const TopHeader = () => {
 					my={'10px'}
 				>
 					<Text
-						textAlign={['justify', 'center', 'left']}
-						fontSpace='100px'
-						fontSize={[40, 40, '1.8rem']}
-						maxWidth={'95%'}
-						paddingTop={'10px'}
+						textAlign={['justify', 'justify', 'left']}
+						fontSize={['1rem', '1.5rem', '1.8rem']}
+						maxWidth={'100%'}
+						paddingBottom={'1rem'}
+						paddingLeft="1rem"
 						fontFamily={'Lato'}
-
+						lineHeight={'2rem'}
 					>
 						Jesteśmy dumni, że posiadamy certyfikat Veeva Full-Service
 						Content Partner i jesteśmy najbardziej certyfikowanym

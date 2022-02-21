@@ -7,6 +7,14 @@ import {
 	Heading,
 } from 'rebass/styled-components';
 import people from './assets/people.png';
+
+const textStyles = {
+	maxWidth: '100%',
+	paddingBottom: '1rem',
+	fontFamily: 'Lato',
+	lineHeight: '1.875rem',
+	fontWeight: '400',
+};
 const TopHeader = () => {
 	return (
 		<Flex
@@ -20,7 +28,7 @@ const TopHeader = () => {
 				alignItems='center'
 				py={4}
 				fontFamily={'Lato'}
-				letterSpacing={'1rem'}
+				letterSpacing={'1.5rem'}
 				css={{
 					'&::after': {
 						content: "''",
@@ -38,22 +46,21 @@ const TopHeader = () => {
 				display={['block', 'block', 'flex']}
 				width={'100%'}
 				minWidth={'364px'}
-				paddingY={['1rem', '2rem', '2rem']}
+				py={['1rem', '2rem', '2rem']}
+				lineHeight={'30px'}
 			>
 				<Box
-					width={['100%', '100%', '1/3']}
-					height={'auto'}
+					width={['100%', '90%', '90%']}
 					display='flex'
 					alignItems='center'
-					my={'10px'}
+					// my={'10px'}
 				>
 					<Text
-						textAlign={['justify', 'justify', 'right']}
+						sx={textStyles}
 						fontSize={['1.1rem', '1.5rem', '1.7rem']}
-						maxWidth={'90%'}
-						paddingBottom={'1rem'}
-						fontFamily={'Lato'}
-						lineHeight={'2rem'}
+						textAlign={['justify', 'justify', 'right']}
+						paddingRight={['0', '0', '1.1rem']}
+
 					>
 						Veeva jest światowym liderem w dostarczaniu oprogramowania
 						opartego na chmurze dla globalnej branży life sciences.
@@ -70,15 +77,14 @@ const TopHeader = () => {
 					</Text>
 				</Box>
 				<Box
-					width={['100%', 'auto', 'auto']}
-					height={'auto'}
+					width={['100%', '100%', '100%']}
 					// mx={'10px'}
 					display={'flex'}
 					justifyContent='center'
 					minWidth={'400px'}
 				>
 					<Image
-						// objectFit='cover'
+						objectFit='cover'
 						src={people}
 						maxHeight={'800px'}
 						sx={{
@@ -89,20 +95,17 @@ const TopHeader = () => {
 					/>
 				</Box>
 				<Box
-					width={['100%', '', '1/3']}
+					width={['100%', '', '90%']}
 					height={'auto'}
 					display='flex'
 					alignItems='center'
 					my={'10px'}
 				>
 					<Text
+						sx={textStyles}
+						fontSize={['1.1rem', '1.5rem', '1.7rem']}
+						paddingLeft={['0', '0', '1.1rem']}
 						textAlign={['justify', 'justify', 'left']}
-						fontSize={['1rem', '1.5rem', '1.8rem']}
-						maxWidth={'100%'}
-						paddingBottom={'1rem'}
-						paddingLeft="1rem"
-						fontFamily={'Lato'}
-						lineHeight={'2rem'}
 					>
 						Jesteśmy dumni, że posiadamy certyfikat Veeva Full-Service
 						Content Partner i jesteśmy najbardziej certyfikowanym

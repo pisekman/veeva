@@ -17,6 +17,7 @@ import Slider from './components/Slider';
 import Header from './components/Header';
 import Cards from './components/Cards';
 import Features from './components/Features';
+import Form from './components/Form';
 
 function App() {
 	return (
@@ -28,6 +29,7 @@ function App() {
 			{/* <Features /> */}
 			<Benefits/>
 			<Cards />
+			<Form/>
 		</Layout>
 	);
 }

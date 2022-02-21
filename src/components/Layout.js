@@ -35,6 +35,11 @@ export const theme = {
 		heading: 2,
 		body: 1,
 	},
+	forms: {
+		input: {
+		  color: 'primary',
+		},
+	},	
 	variants: {
 		wrapper: {
 			marginX: [10, 50, 100],

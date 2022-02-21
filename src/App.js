@@ -18,6 +18,10 @@ import Header from './components/Header';
 import Cards from './components/Cards';
 import Features from './components/Features';
 import Form from './components/Form';
+import SectionTwo from './components/SectionTwo'
+import SectionThree from './components/SectionThree';
+import SectionFour from './components/SectionFour';
+import SectionFive from './components/SectionThree';
 
 function App() {
 	return (
@@ -28,6 +32,10 @@ function App() {
 			{/* <Header /> */}
 			{/* <Features /> */}
 			<Benefits/>
+			<SectionTwo/>
+			<SectionThree/>
+			<SectionFour/>
+			<SectionFive/>
 			<Cards />
 			<Form/>
 		</Layout>

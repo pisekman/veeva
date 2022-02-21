@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from './assets/woman.png';
+import img1 from './assets/puzzledMan.png';
 import cert from './assets/cert.png';
 import backlogo from './assets/vlogo.png';
 import {
@@ -32,14 +32,14 @@ const Vsign = styled.img`
 	}
 	@media (min-width: 1024px) {
 		top: 0%;
-		left: -15%;
+		left: 15%;
 		// object-fit: contain;
 	}
 `;
 const Logo = styled.img`
 	position: absolute;
 	top: 10%;
-	left: 5%;
+	right: 5%;
 
 	@media (max-width: 568px) {
 		top: 2.5%;
@@ -54,14 +54,14 @@ const Logo = styled.img`
 	}
 	@media (min-width: 1024px) {
 		top: 5%;
-		left: 5%;
+		left: 80%;
 		width: 264px;
 	}
 `;
 
-const Benefits = () => {
+const SectionTwo = () => {
 	return (
-		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'}>
+		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'} marginTop={50}>
 			<LogoContainer>
 				<Box
 					display={['block', 'flex', 'flex']}
@@ -74,17 +74,7 @@ const Benefits = () => {
 						outlineOffset: '-40px',
 					}}
 				>
-					<Image
-						objectFit='cover'
-						flexGrow={1}
-						src={img1}
-						minWidth={'60vw'}
-						sx={{
-							width: ['100%', '100%', '100%'],
-						}}
-					/>
-					<Vsign src={backlogo} />
-					<Logo src={cert} />
+					
 					<Box
 						paddingTop={[null, '10px', '100px']}
 						sx={{
@@ -154,10 +144,22 @@ const Benefits = () => {
 							szybkie i dokładne analizowanie rozmów promocyjnych.
 						</Text>
 					</Box>
+                    <Image
+						objectFit='cover'
+						flexGrow={1}
+						src={img1}
+						minWidth={'60vw'}
+						sx={{
+							width: ['100%', '100%', '100%'],
+						}}
+					/>
+					<Vsign src={backlogo} />
+					<Logo src={cert} />
 				</Box>
+                
 			</LogoContainer>
 		</Flex>
 	);
 };
 
-export default Benefits;
+export default SectionTwo;

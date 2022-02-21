@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import img1 from './assets/woman.png';
+import img1 from './assets/grouppeople.png';
 import cert from './assets/cert.png';
 import backlogo from './assets/vlogo.png';
 import {
@@ -32,7 +32,7 @@ const Vsign = styled.img`
 	}
 	@media (min-width: 1024px) {
 		top: 0%;
-		left: -15%;
+		left: -16%;
 		// object-fit: contain;
 	}
 `;
@@ -59,9 +59,9 @@ const Logo = styled.img`
 	}
 `;
 
-const Benefits = () => {
+const SectionFive = () => {
 	return (
-		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'}>
+		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'} marginTop={50}>
 			<LogoContainer>
 				<Box
 					display={['block', 'flex', 'flex']}
@@ -160,4 +160,4 @@ const Benefits = () => {
 	);
 };
 
-export default Benefits;
+export default SectionFive;

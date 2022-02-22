@@ -1,16 +1,16 @@
 import React from 'react';
-import { Box, Flex, Text, Link } from 'rebass/styled-components';
+import { Box, Flex, Text, Image } from 'rebass/styled-components';
+import softLogo from './assets/softwebologo.png';
+import menuLogo from './assets/menuIcon.png'
 
 const TopNav = () => {
 	return (
-		<Flex px={2} color='white' bg='black' alignItems='center'>
-			<Text p={2} fontWeight='bold'>
-				LOGO
-			</Text>
-			<Box mx='auto' />
-			<Text>MENU</Text>
-		</Flex>
-	);
+		<Flex px={['100','200']} color='white' bg='white'  height={'15vh'} alignItems='center'>
+			<Image p={2} width={40} p={2} src={softLogo}/>
+							<Box mx='auto' />
+			<Image p={2} src={menuLogo}/>
+
+</Flex>	);
 };
 
 export default TopNav;

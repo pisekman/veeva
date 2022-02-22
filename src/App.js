@@ -7,6 +7,7 @@ import Cards from './components/Cards';
 import Form from './components/Form';
 import BenefitsContainer from './components/BenefitsContainer';
 import Footer from './components/Footer';
+import Certificate from './components/Certificate';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<Slider />
 			<TopHeader />
 			<BenefitsContainer />
+			<Certificate/>
 			<Cards />
 			<Form />
 			<Footer/>

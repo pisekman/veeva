@@ -3,9 +3,7 @@ import styled from 'styled-components';
 import {
 	Box,
 	Flex,
-	Text,
-	Button,
-	Image,
+
 	Heading,
 } from 'rebass/styled-components';
 import logoCert from './assets/certLogo.png';
@@ -24,17 +22,17 @@ const CertSignRight = styled.img`
 	top: 170px;
 	left: 60%;
 	filter: blur(2px);
-    @media (max-width: 568px) {
+	@media (max-width: 568px) {
 		left: 300px;
 	}
 `;
 const CertSignLeft = styled.img`
 	position: absolute;
 	width: 120px;
-    top: 200px;
+	top: 200px;
 	left: calc(39% - 125px);
 	filter: blur(1px);
-    @media (max-width: 568px) {
+	@media (max-width: 568px) {
 		left: -90px;
 	}
 `;
@@ -44,7 +42,7 @@ const CertSignDeepLeft = styled.img`
 	left: 22%;
 	bottom: -150%;
 	filter: blur(1px);
-    @media (max-width: 568px) {
+	@media (max-width: 568px) {
 		display: none;
 	}
 `;
@@ -54,13 +52,13 @@ const CertSignDeepRight = styled.img`
 	top: 220px;
 	left: 75%;
 	filter: blue(1px);
-    @media (max-width: 568px) {
+	@media (max-width: 568px) {
 		display: none;
 	}
 `;
 const Certificate = () => {
 	return (
-		<Flex height={['70vh','','100vh']}>
+		<Flex height={['70vh', '', '60vh']}>
 			<Box
 				width={'100%'}
 				sx={{
@@ -72,7 +70,6 @@ const Certificate = () => {
 					color: 'black',
 				}}
 			>
-				{' '}
 				<LogoContainer>
 					<Heading
 						alignItems='center'

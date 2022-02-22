@@ -27,21 +27,24 @@ const Footer = () => {
 	return (
 		<Flex
 			width={[1, 1, 1]}
-			flexDirection={'column'}
 			alignItems={'center'}
 			justifyContent={'center'}
 			bg={'#0D1F2D'}
-			height={'20vh'}
+			height={['25vh','20vh']}
 		>
 			<Box
+				display={'flex'}
+				flexDirection={['column', 'row']}
 				sx={{
 					padding: '24px',
-					borderBottom: '2px solid #505050',
+					'@media screen and (min-width: 40em)': {
+						borderBottom: '2px solid #505050',
+					},
 				}}
 			>
 				<FooterStyled>
-					<Box >
-						<Image src={softLogo} paddingRight={200}/>
+					<Box>
+						<Image src={softLogo} paddingRight={['30','200']} />
 
 						<StyledLink href='#'>Start</StyledLink>
 					</Box>

@@ -31,10 +31,10 @@ export const theme = {
 			cursor: 'pointer',
 		},
 	},
-	lineHeights: {
-		heading: 2,
-		body: 1,
-	},
+	// lineHeights: {
+	// 	heading: 2,
+	// 	body: 1,
+	// },
 	forms: {
 		input: {
 		  color: 'primary',
@@ -42,7 +42,7 @@ export const theme = {
 	},	
 	variants: {
 		wrapper: {
-			marginX: [10, 50, 100],
+			marginX: [1, 50, 100],
 		},
 		borderBox: {
 			borderRadius: '2px',

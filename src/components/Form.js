@@ -44,6 +44,7 @@ const ContactPage = () => {
 		}
 		setIsSending(true);
 		console.log({ email: email.value, content: content.value });
+		alert('Formularz wysłany!');
 		setMessageSent(true);
 	};
 
@@ -54,6 +55,7 @@ const ContactPage = () => {
 				width={[1, 1, 1]}
 				flexDirection={'column'}
 				alignItems={'center'}
+				marginBottom={50}
 			>
 				<Heading
 					fontFamily={'Lato'}
@@ -61,8 +63,7 @@ const ContactPage = () => {
 					color={'text'}
 					textAlign={'center'}
 				>
-					Masz pytania? Skontaktuj sie z nami! <br />
-					Formularz kontaktowy
+					Formularz <br/> kontaktowy
 				</Heading>
 				<Box marginTop={20} width={1 / 2}>
 					<Label htmlFor='email' sx={labelStyle}>

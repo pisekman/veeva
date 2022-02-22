@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import img1 from './assets/threepeople.png';
 import cert from './assets/cert.png';
-// import backlogo from './assets/vlogo.png';
+import backlogo from './assets/vlogo.png';
 import {
 	Box,
 	Flex,
@@ -14,10 +14,9 @@ import {
 const LogoContainer = styled.div`
 	position: relative;
 `;
+
 const Vsign = styled.img`
 	position: absolute;
-	// top: 0;
-	// left: -15%;
 	object-fit: contain;
 	width: 100%;
 	max-width: 100%;
@@ -32,8 +31,7 @@ const Vsign = styled.img`
 	}
 	@media (min-width: 1024px) {
 		top: 0%;
-		left: -16%;
-		// object-fit: contain;
+		left: -15%;
 	}
 `;
 const Logo = styled.img`
@@ -42,9 +40,9 @@ const Logo = styled.img`
 	left: 5%;
 
 	@media (max-width: 568px) {
-		top: 2.5%;
+		top: 30%;
 		left: 12.5%;
-		width: 80px;
+		width: 102px;
 	}
 
 	@media (min-width: 568px) {
@@ -58,16 +56,25 @@ const Logo = styled.img`
 		width: 264px;
 	}
 `;
-
-const SectionFive = () => {
+const textStyles = {
+	// maxWidth: '100%',
+	paddingBottom: '1rem',
+	fontFamily: 'Lato',
+	lineHeight: '1.875rem',
+	fontWeight: '400',
+};
+const headingStyles = {
+	alignItems: 'center',
+	fontFamily: 'Lato',
+	fontSize: '1.5rem',
+	letterSpacing: '1.2rem',
+	lineHeight: '3rem',
+};
+const BenefitsFive = () => {
 	return (
-		<Flex
-			variant='wrapper'
-			bg={'primary'}
-			minWidth={'360px'}
-			marginTop={50}
-		>
+		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'}marginTop={50}>
 			<LogoContainer>
+				{/* Header mobile */}
 				<Box
 					display={['block', 'flex', 'flex']}
 					alignItems={['center', 'center', 'center']}
@@ -75,10 +82,30 @@ const SectionFive = () => {
 					flexDirection={['column', 'column', 'row']}
 					sx={{
 						justifyContent: 'space-between',
-						outline: '10px solid white',
 						outlineOffset: '-40px',
+						'@media screen and (min-width: 40em)': {
+							outline: '10px solid white',
+						},
 					}}
 				>
+					<Heading
+						display={['block', 'none', 'none']}
+						my={40}
+						sx={headingStyles}
+						paddingLeft={'15px'}
+						css={{
+							'&::after': {
+								content: "''",
+								height: '4px',
+								width: '188px',
+								backgroundColor: '#FFFFFF',
+								display: 'block',
+								float: 'left',
+								margin: '0 auto',
+							},
+						}}
+					> VEEVA CRM ENGAGE FOR PORTALS
+					</Heading>
 					<Image
 						objectFit='cover'
 						flexGrow={1}
@@ -100,53 +127,40 @@ const SectionFive = () => {
 							height: '100%',
 						}}
 					>
-						{/* <Heading
-							my={2}
-							p={2}
-							fontSize={'24px'}
-							css={{
-								'&::after': {
-									content: "''",
-									height: '4px',
-									width: '188px',
-									backgroundColor: '#FF0000',
-									display: 'block',
-									margin: '0 auto',
-								},
-							}}
-						>
-							Veeva CLM
-						</Heading> */}
+						{/* Header desktop */}
 						<Heading
 							alignItems='center'
-							my={40}
+							my={4}
+							display={['none', 'block', 'block']}
 							fontFamily={'Lato'}
-							fontSize={'1.5rem'}
-							letterSpacing={'1rem'}
-							text
+							fontSize={'1.8rem'}
+							paddingLeft={'3rem'}
+							letterSpacing={'1.4rem'}
+							lineHeight={'2.5rem'}
 							css={{
 								'&::after': {
 									content: "''",
 									height: '4px',
 									width: '188px',
-									backgroundColor: '#000000',
+									backgroundColor: '#FFFFFF',
 									display: 'block',
+									// float: 'left',
+									alignItems: 'start',
 									margin: '0 auto',
 								},
 							}}
 						>
-							Veeva CRM Engage for Portals
+							VEEVA CRM ENGAGE FOR PORTALS
 						</Heading>
 						<Text
-							textAlign={['justify', 'justify', 'left']}
-							paddingLeft={['3rem', '20px', '15px']}
-							fontSpace='100px'
-							fontSize={['1.5rem', '2rem', '2rem']}
+							sx={textStyles}
+							textAlign={['left', 'justify', 'left']}
+							paddingLeft={['1rem', '20px', '15px']}
+							fontSize={['1.1rem', '1.5rem', '1.7rem']}
+							lineHeight={['1.6rem', '2.5rem', '3rem']}
 							paddingTop={['0', '10px', '15px']}
-							maxWidth={'70%'}
-							fontFamily={'Lato'}
+							maxWidth={['100%', '80%', '80%']}
 							my={10}
-							paddingBottom={'100px'}
 						>
 							Veeva Engage for Portals upraszcza dostęp do materiałów
 							promocyjnych przez udostępnianie na Twojej stronie www
@@ -162,4 +176,4 @@ const SectionFive = () => {
 	);
 };
 
-export default SectionFive;
+export default BenefitsFive;

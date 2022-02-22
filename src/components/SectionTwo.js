@@ -16,8 +16,6 @@ const LogoContainer = styled.div`
 `;
 const Vsign = styled.img`
 	position: absolute;
-	// top: 0;
-	// left: -15%;
 	object-fit: contain;
 	width: 100%;
 	max-width: 100%;
@@ -42,39 +40,45 @@ const Logo = styled.img`
 	right: 5%;
 
 	@media (max-width: 568px) {
-		top: 2.5%;
-		left: 12.5%;
+		top: 70%;
+		left: 70.5%;
 		width: 80px;
 	}
 
 	@media (min-width: 568px) {
-		top: 3%;
-		left: 10%;
+		top: 40%;
+		left: 75%;
 		width: 150px;
 	}
 	@media (min-width: 1024px) {
 		top: 5%;
-		left: 80%;
+		left: 75%;
 		width: 264px;
 	}
 `;
 
 const SectionTwo = () => {
 	return (
-		<Flex variant='wrapper' bg={'primary'} minWidth={'360px'} marginTop={50}>
+		<Flex
+			variant='wrapper'
+			bg={'primary'}
+			minWidth={'360px'}
+			marginTop={50}
+		>
 			<LogoContainer>
 				<Box
 					display={['block', 'flex', 'flex']}
 					alignItems={['center', 'center', 'center']}
 					justifyContent={['center', 'center', 'flex-end']}
 					flexDirection={['column', 'column', 'row']}
+
+
 					sx={{
 						justifyContent: 'space-between',
 						outline: '10px solid white',
-						outlineOffset: '-40px',
+						
 					}}
 				>
-					
 					<Box
 						paddingTop={[null, '10px', '100px']}
 						sx={{
@@ -120,35 +124,36 @@ const SectionTwo = () => {
 								},
 							}}
 						>
-							VEEVA CLM
+							Veeva CRM Approved Email
 						</Heading>
 						<Text
 							textAlign={['justify', 'justify', 'left']}
-							paddingLeft={['3rem', '20px', '15px']}
+							paddingLeft={['0.5rem', '20px', '15px']}
 							fontSpace='100px'
 							fontSize={['1.5rem', '2rem', '2rem']}
 							paddingTop={['0', '10px', '15px']}
-							maxWidth={'70%'}
+							maxWidth={['100%', '100%' ,'70%']}
 							fontFamily={'Lato'}
 							my={10}
 							paddingBottom={'100px'}
+							lineHeight={'40px'}
 						>
-							Materiały cyfrowe są łatwo dostępne dla przedstawicieli
-							zarówno farmaceutycznych jak i medycznych, co zwiększa
-							komfort pracy oraz ma wpływ na poprawę uzyskiwanych
-							wyników.
+							Veeva CRM Approved Email Zaprojektowany z myślą o
+							wspieraniu interakcji z pracownikami służby zdrowia,
+							Veeva CRM Approved Email umożliwia wysyłanie zgodnych,
+							zatwierdzonych treści za pośrednictwem poczty e-mail.
 							<br />
-							<br /> Veeva CLM to wbudowany w Veeva CRM moduł do CLM
-							(Closed Loop Marketing). Umożliwia prowadzenie
-							spersonalizowanych prezentacji sprzedażowych oraz
-							szybkie i dokładne analizowanie rozmów promocyjnych.
+							<br /> A ponieważ jest wbudowany w aplikację Veeva CRM,
+							z której Twoi przedstawiciele korzystają na co dzień,
+							jest szybki i łatwy w użyciu.
 						</Text>
 					</Box>
-                    <Image
+					<Image
 						objectFit='cover'
 						flexGrow={1}
 						src={img1}
 						minWidth={'60vw'}
+						height={'100%'}
 						sx={{
 							width: ['100%', '100%', '100%'],
 						}}
@@ -156,7 +161,6 @@ const SectionTwo = () => {
 					<Vsign src={backlogo} />
 					<Logo src={cert} />
 				</Box>
-                
 			</LogoContainer>
 		</Flex>
 	);

@@ -55,7 +55,7 @@ const Vsign = styled.img`
 	}
 	@media (min-width: 1024px) {
 		top: 10%;
-		left: -8%;
+		left: 3%;
 		object-fit: contain;
 
 	}
@@ -71,10 +71,9 @@ const TopHeader = () => {
 	return (
 		<Flex
 			variant={'wrapper'}
-			// opacity={0.9}
 			textAlign={'center'}
 			flexDirection={'column'}
-			mb={100}
+			// mb={50}
 			// flex={1}
 		>
 			<LogoContainer>
@@ -82,10 +81,13 @@ const TopHeader = () => {
 
 				<Heading
 					alignItems='center'
-					py={4}
+					py={3}
+					paddingLeft={'6px'}
 					fontFamily={'Lato'}
 					letterSpacing={'1.2rem'}
+					lineHeight={'3.5rem'}
 					css={{
+				
 						'&::after': {
 							content: "''",
 							height: '4px',
@@ -93,20 +95,23 @@ const TopHeader = () => {
 							backgroundColor: '#FDB913',
 							display: 'block',
 							margin: '0 auto',
+						
+							// paddingBottom:'15px',
+
 						},
 					}}
 				>
-					VEEVA FULL - SERVICE CONTENT PARTNER{' '}
+					VEEVA FULL - SERVICE CONTENT PARTNER
 				</Heading>
 				<Box
 					display={['block', 'block', 'flex']}
 					width={'100%'}
 					minWidth={'364px'}
 					py={['1rem', '2rem', '2rem']}
-					lineHeight={'30px'}
+					// lineHeight={'30px'}
 				>
 					<Box
-						width={['100%', '90%', '90%']}
+						width={['100%', '90%', '100%']}
 						display='flex'
 						alignItems='center'
 						// my={'10px'}
@@ -184,6 +189,19 @@ const TopHeader = () => {
 						</Text>
 					</Box>
 				</Box>
+
+				<Heading
+					alignItems='center'
+					py={3}
+					paddingLeft={'6px'}
+					fontFamily={'Lato'}
+					letterSpacing={'1.2rem'}
+					fontSize={['1rem','3rem']}
+					paddingBottom={'4rem'}
+
+				>
+					CERTYFIKATY
+				</Heading>
 			</LogoContainer>
 		</Flex>
 	);

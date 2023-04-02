@@ -1,23 +1,18 @@
 ### Veeva
-This repository contains the source code and documentation for the Veeva ass.
+This repository contains the source code and documentation for the Veeva assignment tasks.
 
 Introduction
 Veeva is a web application designed to manage sales and marketing activities for pharmaceutical companies. It allows sales representatives to access and share up-to-date product information with their clients, as well as track customer interactions and sales performance.
 
-Features
-User authentication and authorization
+### Features
 Product catalog management
-Customer relationship management
 Sales performance analytics
 Mobile responsive design
 Technologies
-Veeva is built using the following technologies:
+### Veeva is built using the following technologies:
 
-Node.js
-Express.js
-MongoDB
 React.js
-Redux
+Rebass
 Bootstrap
 Getting started
 To run Veeva on your local machine, follow these steps:

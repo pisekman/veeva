@@ -9,7 +9,8 @@ Mobile responsive design
 
 - React.js
 - Rebass
-Getting started
+
+## Getting started
 To run Veeva on your local machine, follow these steps:
 
 Clone the repository: git clone https://github.com/pisekman/veeva.git

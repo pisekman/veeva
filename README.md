@@ -3,13 +3,12 @@ This repository contains the source code and documentation for the Veeva assignm
 
 ### Features
 Product catalog management
-Sales performance analytics
 Mobile responsive design
-Technologies
+
 ### Veeva is built using the following technologies:
 
-#React.js
-#Rebass
+# React.js
+# Rebass
 Getting started
 To run Veeva on your local machine, follow these steps:
 

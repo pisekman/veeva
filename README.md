@@ -7,8 +7,8 @@ Mobile responsive design
 
 ### Veeva is built using the following technologies:
 
-# React.js
-# Rebass
+## React.js
+## Rebass
 Getting started
 To run Veeva on your local machine, follow these steps:
 

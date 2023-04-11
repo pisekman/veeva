@@ -11,12 +11,9 @@ Mobile responsive design
 - Rebass
 
 ## Getting started
-To run Veeva on your local machine, follow these steps:
 
-Clone the repository: git clone https://github.com/pisekman/veeva.git
-Install dependencies: cd veeva && npm install
-Start the server: npm start
-Open the application in your browser at http://localhost:3000
+
+LIVE: https://chimerical-crumble-f66869.netlify.app/
 
 
 ### License

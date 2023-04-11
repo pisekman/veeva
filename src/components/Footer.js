@@ -2,10 +2,7 @@ import React from 'react';
 import {
 	Box,
 	Flex,
-	Text,
-	Button,
 	Image,
-	Heading,
 } from 'rebass/styled-components';
 import styled from 'styled-components';
 import softLogo from './assets/softwebologo.png';

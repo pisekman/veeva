@@ -13,29 +13,7 @@ import people from './assets/people.png';
 const LogoContainer = styled.div`
 	position: relative;
 `;
-const Vsigns = styled.img`
-	position: absolute;
-	// top: 0;
-	// left: -15%;
-	object-fit: contain;
-	width: 100%;
-	max-width: 100%;
-	max-height: 100%;
 
-	@media (max-width: 568px) {
-		display: none;
-	}
-	@media (min-width: 568px) {
-		top: -15%;
-		left: 0%;
-	}
-	@media (min-width: 1024px) {
-		top: -10%;
-		left: -6%;
-		object-fit: contain;
-
-	}
-`;
 
 const Vsign = styled.img`
 	position: absolute;

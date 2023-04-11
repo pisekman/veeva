@@ -8,6 +8,7 @@ import Form from './components/Form';
 import BenefitsContainer from './components/BenefitsContainer';
 import Footer from './components/Footer';
 import Certificate from './components/Certificate';
+import React from 'react';
 
 function App() {
 	return (

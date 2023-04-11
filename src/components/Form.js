@@ -6,7 +6,9 @@ import {
 	Button,
 	Heading,
 } from 'rebass/styled-components';
-import { Label, Input, Textarea } from '@rebass/forms';
+import { Label, Input, Textarea } from '@rebass/forms'
+
+
 const labelStyle = {
 	color: 'primary',
 	fontSize: '25px',

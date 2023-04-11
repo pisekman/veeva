@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box, Flex } from 'rebass/styled-components';
 import { ThemeProvider } from 'styled-components';
 import './../index.css';
 
